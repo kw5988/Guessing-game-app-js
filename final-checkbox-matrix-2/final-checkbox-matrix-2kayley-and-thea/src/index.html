@@ -1,0 +1,41 @@
+<!--              
+  This HTML file is for the CS317 Fall 2023 Project 2 Task 2b Checkbox Matrix 2.   
+  It is very loosely influenced by Homework Project 0 from the EdX Harvard University course CS50's Mobile App Development with React Native
+  https://www.edx.org/learn/react-native/harvard-university-cs50-s-mobile-app-development-with-react-native 
+
+  Author: Lyn Turbak 
+  Date: Wed-THu 2023/09/20-21
+-->
+<html>
+  <head>
+    <title>Checkbox Matrix 2</title>
+    <link rel="stylesheet" type="text/css" href="./matrix2.css" />
+  </head>
+  <body>
+    <div class="container center">
+      <h1 class="center title">Checkbox Matrix 2</h1>
+      <div id="controls" class="center" style="display:block;">
+        <div id="inputDiv" class="center" style="display:block;">
+          New matrix with size:
+          <input type="text" id="matrixSizeTextbox" style="width:40px;" class="center">
+          <span id="validityError"><span>
+        </div>
+        <div style="display:block;">
+          <span class="choice">
+            <input type="radio" name="mode" value="inclusive"
+                   id="inclusiveRadioButton" checked disabled> inclusive
+            </span>
+          <span class="choice">
+            <input type="radio" name="mode" value="exclusive"
+                   id="exclusiveRadioButton" disabled> exclusive
+          </span class="choice">
+          <button id="checkAllButton" class="button center" disabled>Check All</button>
+          <button id="uncheckAllButton" class="button center" disabled>Uncheck All</button>
+        </div>
+       </div>
+      <table>
+      </table>
+    </div>
+    <script src="./matrix2.js"></script>
+  </body>
+</html>
